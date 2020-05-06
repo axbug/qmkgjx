@@ -16,7 +16,7 @@ $img = str_ireplace("\\/", "/", $img);
 if (!empty($img)){
 	$reinfo = array('code' => '1', 'msg' => 'success', 'mp3' => $mp3[1], 'video' => $mp4[1], "img" => $img[1]);
 }else{
-    $reinfo = array('status' => '-1', 'msg' => 'ㄟ( ▔, ▔ )ㄏ，没有找到相关信息');
+    $reinfo = array('code' => '-1', 'msg' => 'ㄟ( ▔, ▔ )ㄏ，没有找到相关信息');
 }
 echo json_encode($reinfo);
 ?>
